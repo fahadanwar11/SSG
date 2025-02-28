@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import IMAGES from "@/assets/images";
+// import IMAGES from "@/assets/images";
 
 export default function AboutUsCard() {
   return (
@@ -19,7 +19,7 @@ export default function AboutUsCard() {
             </h1>
           </div>
           <img
-            src={IMAGES.ABOUT_US_CAMERA_ONE}
+            src={"/aboutUsCamera1.jpg"}
             alt="Security camera on a building"
             className="object-cover"
           />
@@ -97,7 +97,7 @@ export default function AboutUsCard() {
             </p>
           </div>
           <img
-            src={IMAGES.ABOUT_US_CAMERA_TWO}
+            src={"/aboutUsCamera2.jpg"}
             alt="Security camera on wall"
             className="object-cover"
           />
