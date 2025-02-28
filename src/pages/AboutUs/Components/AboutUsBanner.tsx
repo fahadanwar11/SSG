@@ -1,4 +1,4 @@
-import IMAGES from "@/assets/images";
+import ABOUT_US_BANNER_IMG from "@/assets/images/AboutUsBanner.jpeg";
 import { motion } from "framer-motion";
 
 function AboutUsBanner() {
@@ -7,7 +7,7 @@ function AboutUsBanner() {
       {/* Background Image */}
       <div className="absolute inset-0 h-full">
         <img
-          src={IMAGES.ABOUT_US_BANNER_IMG}
+          src={ABOUT_US_BANNER_IMG}
           alt="Security team in front of city skyline"
           className="object-cover w-full h-full"
         />
