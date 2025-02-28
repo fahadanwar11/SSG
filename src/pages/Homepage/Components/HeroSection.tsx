@@ -1,4 +1,4 @@
-import IMAGES from "@/assets/images";
+// import IMAGES from "@/assets/images";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -8,7 +8,8 @@ function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 h-full">
         <img
-          src={IMAGES.HOMEPAGE_BANNER_IMG}
+          // src={IMAGES?.HOMEPAGE_BANNER_IMG}
+          src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1920&q=80"
           alt="Security team in front of city skyline"
           className="object-cover w-full h-full"
         />
