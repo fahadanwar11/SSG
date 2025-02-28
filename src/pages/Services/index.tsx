@@ -1,4 +1,4 @@
-import IMAGES from "@/assets/images";
+import IMAGES from "@/utils/images/index";
 import { useParams } from "react-router-dom";
 
 interface ServiceDetail {

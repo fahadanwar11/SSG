@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import IMAGES from "@/assets/images";
+import IMAGES from "@/utils/images/index";
 
 export default function AboutUsCard() {
   return (
