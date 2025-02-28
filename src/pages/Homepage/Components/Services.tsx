@@ -7,36 +7,43 @@ interface Service {
   number: string;
   title: string;
   description: string;
+  bulletPoints?: string[];
 }
 
 const services: Service[] = [
   {
     id: "01",
     number: "01",
-    title: "Security Personnel",
+    title: "Security Guard Services",
     description:
-      "Enjoy top-tier security and peace of mind with our highly trained Security Personnel, dedicated to safeguarding you and your assets.",
+      "Our professional security guards provide visible protection and rapid response, ensuring safety at all times.",
+    bulletPoints: [
+      "Corporate & Commercial Security",
+      "Retail & Shopping Centre Security",
+      "Residential Building Security",
+      "Construction Site Protection",
+    ],
   },
   {
     id: "02",
     number: "02",
-    title: "Loss Prevention",
+    title: "Mobile Patrols",
     description:
-      "Boost your business resilience with our comprehensive Loss Prevention services, safeguarding assets and bolstering your bottom line against theft and fraud.",
+      "Ensure continuous surveillance and deterrence with our mobile patrol services.",
   },
   {
     id: "03",
     number: "03",
-    title: "Mobile Patrols",
+    title: "Event Security",
     description:
-      "Secure your premises around the clock with our dynamic Mobile Patrols service, designed to deter crime and provide rapid response solutions.",
+      "We provide specialized security teams for private and corporate events.",
   },
   {
     id: "04",
     number: "04",
-    title: "Risk Management",
+    title: "Retail & Loss Prevention Security",
     description:
-      "Mitigate potential threats with our strategic Risk Management services, tailored to identify, evaluate, and manage risks efficiently.",
+      "Protect your business from theft, vandalism, and fraud with our expert loss prevention officers.",
   },
   {
     id: "05",
@@ -56,8 +63,10 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section className="w-10/12 mx-auto px-4 py-16">
-      <h2 className="text-4xl font-bold text-center mb-12">Services</h2>
+    <section className="w-11/12 lg:w-10/12 max-w-7xl   mx-auto px-4 py-16">
+      <h2 className="text-4xl font-bold text-left lg:mb-12 md:mb-8 sm:mb-6 ">
+        Services
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <motion.div

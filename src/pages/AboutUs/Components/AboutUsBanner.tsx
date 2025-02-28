@@ -1,14 +1,13 @@
 import IMAGES from "@/assets/images";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-function HeroSection() {
+function AboutUsBanner() {
   return (
     <section className="relative min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 h-full">
         <img
-          src={IMAGES.HOMEPAGE_BANNER_IMG}
+          src={IMAGES.ABOUT_US_BANNER_IMG}
           alt="Security team in front of city skyline"
           className="object-cover w-full h-full"
         />
@@ -17,7 +16,7 @@ function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative lg:w-10/12 max-w-7xl w-11/12 mx-auto px-4">
+      <div className="relative w-11/12 lg:w-10/12 max-w-7xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -28,7 +27,7 @@ function HeroSection() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
               type: "spring",
               stiffness: 100,
@@ -43,9 +42,9 @@ function HeroSection() {
           <motion.p
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
-              ease: "easeInOut",
+              type: "easeInOut",
               duration: 0.6,
               delay: 0.4,
             }}
@@ -56,32 +55,10 @@ function HeroSection() {
             and communities. Our expert security professionals deliver reliable
             protection with a proactive and strategic approach.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.5,
-              delay: 0.6,
-            }}
-            className="mt-8 space-x-4"
-          >
-            <Button size="lg" className="text-lg font-medium px-8 py-7">
-              Learn More
-            </Button>
-            <Button
-              variant="secondary"
-              size="lg"
-              className="text-lg font-medium px-8 py-7"
-            >
-              Contact Us
-            </Button>
-          </motion.div>
         </motion.div>
       </div>
     </section>
   );
 }
 
-export default HeroSection;
+export default AboutUsBanner;

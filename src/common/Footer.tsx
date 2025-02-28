@@ -61,7 +61,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-50 border-t">
-      <div className="w-10/12 mx-auto px-4 py-12">
+      <div className="w-11/12 lg:w-10/12 max-w-7xl   mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

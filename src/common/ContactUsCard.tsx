@@ -65,13 +65,13 @@ export default function ContactUsCard() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="max-w-2xl mx-auto px-4 py-12"
+      className="max-w-7xl w-11/12 lg:w-10/12 mx-auto px-4 py-12"
     >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-4xl font-medium text-gray-700 mb-8"
+        className="text-4xl font-bold text-left lg:mb-12 md:mb-8 sm:mb-6 "
       >
         Contact Us
       </motion.h1>
