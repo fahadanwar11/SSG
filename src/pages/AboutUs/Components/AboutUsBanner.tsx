@@ -1,4 +1,5 @@
-import ABOUT_US_BANNER_IMG from "@/assets/images/AboutUsBanner.jpeg";
+import ABOUT_US_BANNER_IMG from "@/assets/images/aboutUsCamera1.jpg"
+//AboutUsBanner.jpeg";
 import { motion } from "framer-motion";
 
 function AboutUsBanner() {
