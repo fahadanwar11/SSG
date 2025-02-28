@@ -1,6 +1,4 @@
-// import IMAGES from "@/assets/images";
-import HOMEPAGE_BANNER_IMG from "@/assets/images/bannerImg.jpeg";
-
+import IMAGES from "@/assets/images";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -10,7 +8,7 @@ function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 h-full">
         <img
-          src={HOMEPAGE_BANNER_IMG}
+          src={IMAGES?.HOMEPAGE_BANNER_IMG}
           alt="Security team in front of city skyline"
           className="object-cover w-full h-full"
         />

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import ABOUT_US_CAMERA_ONE from "@/assets/images/AboutUsCamera1.jpg";
-import ABOUT_US_CAMERA_TWO from "@/assets/images/AboutUsCamera2.jpg";
+import IMAGES from "@/assets/images";
 
 export default function AboutUsCard() {
   return (
@@ -15,11 +14,12 @@ export default function AboutUsCard() {
         >
           <div className="w-full mb-4 min-h-[120px] flex items-center">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-              Your First Line Of Defence.
+              Your First Line Of 
+              Defence.
             </h1>
           </div>
           <img
-            src={ABOUT_US_CAMERA_ONE}
+            src={IMAGES.ABOUT_US_CAMERA_ONE}
             alt="Security camera on a building"
             className="object-cover"
           />
@@ -27,7 +27,7 @@ export default function AboutUsCard() {
 
         <div className="spac-y-12 flex flex-col lg:mt-16 md:mt-0 justify-center">
           <motion.div
-            className="mb-8"
+          className="mb-8"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -45,7 +45,7 @@ export default function AboutUsCard() {
           </motion.div>
 
           <motion.div
-            className="mb-8"
+          className="mb-8"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -97,7 +97,7 @@ export default function AboutUsCard() {
             </p>
           </div>
           <img
-            src={ABOUT_US_CAMERA_TWO}
+            src={IMAGES.ABOUT_US_CAMERA_TWO}
             alt="Security camera on wall"
             className="object-cover"
           />
