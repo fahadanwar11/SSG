@@ -106,7 +106,7 @@ export default function Navbar() {
               <HoverCard>
                 <HoverCardTrigger asChild className="relative z-20">
                   <NavLink
-                    to="/sectors"
+                    to=""
                     className="text-white hover:text-gray-300 transition-colors"
                   >
                     SECTORS
