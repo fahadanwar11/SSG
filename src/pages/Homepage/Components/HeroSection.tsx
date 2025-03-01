@@ -1,6 +1,7 @@
 // import IMAGES from "@/assets/images";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -68,16 +69,21 @@ function HeroSection() {
             }}
             className="mt-8 space-x-4"
           >
-            <Button size="lg" className="text-lg font-medium px-8 py-7">
+            <Button
+              size="lg"
+              className="text-lg font-medium px-8 py-7 cursor-pointer"
+            >
               Learn More
             </Button>
-            <Button
-              variant="secondary"
-              size="lg"
-              className="text-lg font-medium px-8 py-7"
-            >
-              Contact Us
-            </Button>
+            <Link to="/contact">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="text-lg font-medium px-8 py-7 cursor-pointer"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

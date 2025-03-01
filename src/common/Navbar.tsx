@@ -8,22 +8,50 @@ import { useNavigate, NavLink } from "react-router-dom";
 
 const ServicesSubmenu = [
   {
-    title: "Security Services",
-    link: "/services/security-services",
+    title: "Security Guard Services",
+    link: "/services/security-guard-services",
   },
   {
-    title: "Facility Management",
-    link: "/services/facility-management",
+    title: "Mobile Patrols",
+    link: "/services/mobile-patrols",
+  },
+  {
+    title: "Event Security",
+    link: "/services/event-security",
+  },
+  {
+    title: "Retail & Loss Prevention Security",
+    link: "/services/retail-loss-prevention",
+  },
+  {
+    title: "Customer Service",
+    link: "/services/customer-service",
+  },
+  {
+    title: "Crowd Control",
+    link: "/services/crowd-control",
   },
 ];
 const SectorsSubmenu = [
   {
-    title: "Commercial",
-    link: "/sectors",
+    title: "Corporate & Office Security",
+    link: "/sectors/corporate-office-security",
   },
   {
-    title: "Residential",
-    link: "/sectors",
+    title: "Retail & Shopping Centres",
+    link: "/sectors/retail-shopping-centres",
+  },
+  {
+    title: "Residential Buildings",
+    link: "/sectors/residential-buildings",
+  },
+  {
+    title: "Events & Private Functions",
+    link: "/sectors/events-private-functions",
+  },
+  {
+    title: "Construction Sites",
+    link: "/sectors/construction-sites",
   },
 ];
 export default function Navbar() {
@@ -37,7 +65,7 @@ export default function Navbar() {
             to="/"
             className="text-white text-2xl font-bold tracking-wider"
           >
-            ON GUARD
+            SSG
           </NavLink>
 
           {/* Navigation Links */}

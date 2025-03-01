@@ -36,7 +36,7 @@ function AboutUsBanner() {
             }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
           >
-            Professional Security Services in Melbourne
+            Leadership in Security & Protection
           </motion.h1>
 
           <motion.p
@@ -50,10 +50,11 @@ function AboutUsBanner() {
             }}
             className="text-md md:text-lg text-white/90 max-w-xl"
           >
-            At Security Service Group, we are committed to providing top-tier
-            security solutions that ensure the safety of businesses, properties,
-            and communities. Our expert security professionals deliver reliable
-            protection with a proactive and strategic approach.
+            Founded in 2024 by Ahmer Shahid, Security Service Group is built on
+            a vision of enhancing security standards for businesses, residential
+            properties, and public spaces. With a strategic approach to risk
+            mitigation, we focus on proactive security solutions to create safer
+            environments.
           </motion.p>
         </motion.div>
       </div>
