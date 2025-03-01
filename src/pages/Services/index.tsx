@@ -41,8 +41,7 @@ function Services() {
     <>
       <div className="relative inset-0 h-full">
         <img
-            src={IMAGES.SERVICES_IMG}
-          // src="/servicesImg.jpg"
+          src={IMAGES.SERVICES_IMG}
           alt="Services"
           className="w-full h-96 object-cover inset-0 bg-black/50 mix-blend-multiply"
         />
