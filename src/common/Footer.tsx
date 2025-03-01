@@ -29,7 +29,7 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/sectors", label: "Sectors" },
-  { href: "/contact", label: "Contact" },
+  // { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -129,17 +129,7 @@ export default function Footer() {
           transition={{ duration: 0.5 }}
           className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200"
         >
-          <p className="text-sm text-gray-600 mb-4 md:mb-0">
-            © On Guard Group. Website by{" "}
-            <a
-              href="https://180creative.com"
-              className="text-gray-900 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              180 Creative
-            </a>
-          </p>
+          <p className="text-sm text-gray-600 mb-4 md:mb-0">© SSG Website</p>
 
           <motion.button
             onClick={scrollToTop}
