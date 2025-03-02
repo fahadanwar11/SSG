@@ -22,14 +22,14 @@ function App() {
         </Routes>
         <Footer />
         <Routes>
-          <Route
+          {/* <Route
             path="*"
             element={
               <div className="text-center text-4xl font-bold text-red-500 w-full h-screen flex items-center justify-center">
                 PAGE NOT FOUND ERROR:404
               </div>
             }
-          />
+          /> */}
         </Routes>
       </Router>
     </>
