@@ -4,7 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { ArrowUp, Mail } from "lucide-react";
+import { ArrowUp, Mail, MailIcon, PhoneCallIcon } from "lucide-react";
+import { IoLocationOutline } from "react-icons/io5";
+
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
@@ -29,7 +31,6 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/sectors", label: "Sectors" },
-  // { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -61,7 +62,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-50 border-t">
-      <div className="w-11/12 lg:w-10/12 max-w-7xl   mx-auto px-4 py-12">
+      <div className="w-11/12 lg:w-10/12 max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -122,6 +123,25 @@ export default function Footer() {
             ))}
           </motion.nav>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          className="text-gray-600 flex flex-col gap-2.5 lg:flex-row lg:justify-between lg:items-center px-0 py-2 rounded-lg w-full text-sm"
+        >
+          <div className="flex gap-2 items-center">
+            <IoLocationOutline size={16} />
+            <p>4/13-15 Nicholson Street, Footscray, Melbourne, VIC 3011</p>
+          </div>
+          <div className="flex gap-2 items-center">
+            <PhoneCallIcon size={16} />
+            <p>0480 247 436</p>
+          </div>
+          <div className="flex gap-2 items-center">
+            <MailIcon size={16} />
+            <p>admin@securityservicegroup.com.au</p>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
