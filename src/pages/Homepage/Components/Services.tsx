@@ -63,8 +63,8 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section className="w-11/12 lg:w-10/12 max-w-7xl   mx-auto px-4 py-16">
-      <h2 className="text-4xl font-bold text-left lg:mb-12 md:mb-8 sm:mb-6 ">
+    <section className="w-11/12 lg:w-10/12 max-w-7xl mx-auto px-4 py-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-left lg:mb-12 md:mb-8 sm:mb-6 ">
         Services
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -67,7 +67,7 @@ function HeroSection() {
               duration: 0.5,
               delay: 0.6,
             }}
-            className="mt-8 space-x-4"
+            className="mt-8 space-x-4 pb-4"
           >
             <Button
               size="lg"
