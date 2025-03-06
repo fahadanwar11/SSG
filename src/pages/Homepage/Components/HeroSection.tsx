@@ -71,7 +71,7 @@ function HeroSection() {
           >
             <Button
               size="lg"
-              className="text-lg font-medium px-8 py-7 cursor-pointer"
+              className="text-lg font-medium px-8 py-7 cursor-pointer mb-2"
             >
               Learn More
             </Button>
@@ -79,7 +79,7 @@ function HeroSection() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="text-lg font-medium px-8 py-7 cursor-pointer"
+                className="text-lg font-medium px-8 py-7 cursor-pointer mb-2"
               >
                 Contact Us
               </Button>

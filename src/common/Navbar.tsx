@@ -72,8 +72,8 @@ export default function Navbar() {
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
-      <div className="w-11/12 lg:w-10/12 max-w-7xl mx-auto px-4">
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-sm">
+      <div className="w-11/12 lg:w-10/12 max-w-7xl mx-auto px-0">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink
@@ -150,7 +150,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             {/* Contact Button - Desktop */}
             <div className="hidden md:block">
-              <Button variant="secondary" size="lg" asChild>
+              <Button className="bg-secondary text-black hover:bg-secondary " size="lg" asChild>
                 <NavLink to="/contact">CONTACT US</NavLink>
               </Button>
             </div>

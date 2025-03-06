@@ -179,7 +179,7 @@ export default function ContactUsCard() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gray-800 hover:bg-gray-700 text-white py-3 transition-colors"
+            className="w-full bg-primary text-white py-3 transition-colors"
           >
             {isSubmitting ? (
               <>

@@ -28,9 +28,9 @@ const FooterLink = ({ href, children }: FooterLinkProps) => (
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/sectors", label: "Sectors" },
+  { href: "/about-us", label: "About" },
+  { href: "/services/security-guard-services", label: "Services" },
+  { href: "/sectors/corporate-office-security", label: "Sectors" },
 ];
 
 export default function Footer() {
