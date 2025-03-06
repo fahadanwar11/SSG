@@ -91,12 +91,12 @@ export default function Footer() {
                     </span>
                   )}
                 </div>
-                <Button type="submit" disabled={isSubmitting}>
+                <Button type="submit" className="bg-primary" disabled={isSubmitting}>
                   {isSubmitting ? (
                     "Subscribing..."
                   ) : (
                     <>
-                      <Mail className="mr-2 h-4 w-4" />
+                      <Mail className="mr-2 h-4 w-4 bg-primary" />
                       Subscribe
                     </>
                   )}
@@ -149,7 +149,7 @@ export default function Footer() {
           transition={{ duration: 0.5 }}
           className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200"
         >
-          <p className="text-sm text-gray-600 mb-4 md:mb-0">© SSG Website</p>
+          <p className="text-sm text-primary mb-4 md:mb-0">© SSG Website</p>
 
           <motion.button
             onClick={scrollToTop}

@@ -6,6 +6,7 @@ interface Service {
   id: string;
   number: string;
   title: string;
+  link: string;
   description: string;
   bulletPoints?: string[];
 }
@@ -15,6 +16,7 @@ const services: Service[] = [
     id: "01",
     number: "01",
     title: "Security Guard Services",
+    link: "/services/security-guard-services",
     description:
       "Our professional security guards provide visible protection and rapid response, ensuring safety at all times.",
     bulletPoints: [
@@ -28,6 +30,7 @@ const services: Service[] = [
     id: "02",
     number: "02",
     title: "Mobile Patrols",
+    link: "/services/mobile-patrols",
     description:
       "Ensure continuous surveillance and deterrence with our mobile patrol services.",
   },
@@ -35,6 +38,7 @@ const services: Service[] = [
     id: "03",
     number: "03",
     title: "Event Security",
+    link: "/services/event-security",
     description:
       "We provide specialized security teams for private and corporate events.",
   },
@@ -42,6 +46,8 @@ const services: Service[] = [
     id: "04",
     number: "04",
     title: "Retail & Loss Prevention Security",
+    link: "/services/retail-loss-prevention",
+
     description:
       "Protect your business from theft, vandalism, and fraud with our expert loss prevention officers.",
   },
@@ -49,6 +55,7 @@ const services: Service[] = [
     id: "05",
     number: "05",
     title: "Customer Service",
+    link: "/services/customer-service",
     description:
       "Enhance your customer experience with our exceptional Customer Service, blending security and hospitality for a welcoming environment.",
   },
@@ -56,6 +63,8 @@ const services: Service[] = [
     id: "06",
     number: "06",
     title: "Crowd Control",
+    link: "/services/crowd-control",
+
     description:
       "Ensure event safety and order with our expert Crowd Control services, managing crowds effectively to prevent disturbances.",
   },
@@ -76,9 +85,9 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: index * 0.4 }}
           >
-            <Card className="relative group h-full overflow-hidden border-t-1 border-gray-800 transition-all duration-500 ease-in-out rounded-t-lg rounded-md group-hover:rounded-none group-hover:border-none border-0 shadow-lg group-hover:shadow-none">
+            <Card className="relative group h-full overflow-hidden border-t-1 border-bg-primary transition-all duration-500 ease-in-out rounded-t-lg rounded-md group-hover:rounded-none group-hover:border-none border-0 shadow-lg group-hover:shadow-none">
               {/* Hover Effect for the Top Border Falling Smoothly */}
-              <div className="absolute inset-x-0 top-0 h-1 bg-gray-800 group-hover:h-full group-hover:bg-gray-800 transition-all duration-500 ease-in-out rounded-t-lg group-hover:rounded-none" />
+              <div className="absolute inset-x-0 top-0 h-1 bg-primary group-hover:h-full group-hover:bg-primary/95 transition-all duration-500 ease-in-out rounded-t-lg group-hover:rounded-none" />
 
               <CardContent className="pt-8 relative z-10 transition-all duration-500 ease-in-out min-h-[200px] group-hover:text-white">
                 <p className=" text-muted-foreground mb-2 font-semibold text-lg group-hover:text-white">
@@ -96,6 +105,9 @@ export default function Services() {
                 <Button
                   variant="outline"
                   className="mt-4 group-hover: group-hover:text-black transition-all duration-500 ease-in-out cursor-pointer"
+                  onClick={() => {
+                    window.location.href = service.link;
+                  }}
                 >
                   Learn More
                 </Button>

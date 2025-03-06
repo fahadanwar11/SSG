@@ -15,6 +15,7 @@ import {
 import { ChevronDown, Menu } from "lucide-react";
 import { useNavigate, NavLink } from "react-router-dom";
 import { useState } from "react";
+import IMAGES from "@/assets/images";
 
 const ServicesSubmenu = [
   {
@@ -72,19 +73,23 @@ export default function Navbar() {
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-sm">
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-primary backdrop-blur-sm">
       <div className="w-11/12 lg:w-10/12 max-w-7xl mx-auto px-0">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink
             to="/"
-            className="text-white text-2xl font-bold tracking-wider"
+            // className="text-white text-2xl font-bold tracking-wider"
           >
-            SSG
+            <img
+              src={IMAGES.LOGO}
+              alt="Security Service Group"
+              className="h-18 w-18 object-cover object-center"
+            />
           </NavLink>
 
           {/* Navigation Links - Desktop */}
-          <div className="hidden md:flex space-x-12">
+          <div className="hidden md:flex space-x-12 font-semibold">
             <NavLink
               to="/about-us"
               className="text-white hover:text-gray-300 transition-colors"
@@ -150,7 +155,11 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             {/* Contact Button - Desktop */}
             <div className="hidden md:block">
-              <Button className="bg-secondary text-black hover:bg-secondary " size="lg" asChild>
+              <Button
+                className="bg-secondary text-black hover:bg-secondary "
+                size="lg"
+                asChild
+              >
                 <NavLink to="/contact">CONTACT US</NavLink>
               </Button>
             </div>
