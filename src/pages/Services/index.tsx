@@ -183,7 +183,10 @@ function Services() {
           </div>
 
           {/* Contact Us */}
-          <div className="mt-8 p-6 bg-gray-100 rounded-lg">
+          <div
+            className="mt-8 p-6 bg-gray-100 rounded-lg cursor-pointer"
+            onClick={() => (window.location.href = "/contact")}
+          >
             <h3 className="text-2xl font-semibold mb-2">Contact Us</h3>
             <p className="text-base">{selectedService?.contactUs}</p>
           </div>
