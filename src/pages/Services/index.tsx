@@ -124,7 +124,6 @@ const servicesDetails: ServiceDetail[] = [
 function Services() {
   const { serviceId } = useParams<{ serviceId: string }>();
 
-  // Look up the service based on the last segment of the link
   const selectedService: ServiceDetail | null = serviceId
     ? servicesDetails.find(
         (service) => service.link.split("/").pop() === serviceId

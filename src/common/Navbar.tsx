@@ -13,7 +13,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { ChevronDown, Menu } from "lucide-react";
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import IMAGES from "@/assets/images";
 
@@ -68,7 +68,7 @@ const SectorsSubmenu = [
 ];
 
 export default function Navbar() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
 
@@ -110,7 +110,8 @@ export default function Navbar() {
                   <div className="space-y-4 flex flex-col">
                     {ServicesSubmenu.map((service, index) => (
                       <div
-                        onClick={() => navigate(service.link)}
+                        onClick={() => (window.location.href = service.link)}
+                        //  onClick={() => navigate(service.link)}
                         key={index}
                         className="text-primary hover:font-semibold hover:underline transition-colors p-1 cursor-pointer"
                       >
@@ -136,13 +137,14 @@ export default function Navbar() {
                   <div className="flex justify-between space-x-4">
                     <div className="space-y-1 flex flex-col">
                       {SectorsSubmenu.map((sector, index) => (
-                        <NavLink
+                        <div
                           key={index}
-                          to={sector.link}
-                          className="text-primary hover:font-semibold hover:underline transition-colors p-1"
+                          onClick={() => (window.location.href = sector.link)}
+                          //    onClick={() => navigate(sector.link)}
+                          className="text-primary hover:font-semibold hover:underline transition-colors p-1 cursor-pointer"
                         >
                           {sector.title}
-                        </NavLink>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -175,7 +177,7 @@ export default function Navbar() {
                 </SheetTrigger>
                 <SheetContent
                   side="right"
-                  className="bg-black/95 text-white border-l border-gray-800 w-[300px] px-4"
+                  className="bg-primary/95 text-white border-l border-gray-800 w-[300px] px-4"
                 >
                   <div className="flex flex-col space-y-6 mt-8">
                     <NavLink
@@ -200,13 +202,16 @@ export default function Navbar() {
                       </CollapsibleTrigger>
                       <CollapsibleContent className="mt-2 space-y-2 pl-4">
                         {ServicesSubmenu.map((service, index) => (
-                          <NavLink
+                          <div
                             key={index}
-                            to={service.link}
+                            onClick={() =>
+                              (window.location.href = service.link)
+                            }
+                            // to={service.link}
                             className="block py-2 text-gray-300 hover:text-white transition-colors"
                           >
                             {service.title}
-                          </NavLink>
+                          </div>
                         ))}
                       </CollapsibleContent>
                     </Collapsible>
@@ -226,13 +231,14 @@ export default function Navbar() {
                       </CollapsibleTrigger>
                       <CollapsibleContent className="mt-2 space-y-2 pl-4">
                         {SectorsSubmenu.map((sector, index) => (
-                          <NavLink
+                          <div
                             key={index}
-                            to={sector.link}
+                            onClick={() => (window.location.href = sector.link)}
+                            //   to={sector.link}
                             className="block py-2 text-gray-300 hover:text-white transition-colors"
                           >
                             {sector.title}
-                          </NavLink>
+                          </div>
                         ))}
                       </CollapsibleContent>
                     </Collapsible>

@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./common/Navbar";
 import Footer from "./common/Footer";
 import publicRoutes from "./router/Routes";
+import ScrollToTop from "./common/ScrollToTop";
 
 interface ROUTE_PROPS {
   path: string;
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop /> {/* Add this component here */}
         <Routes>
           {publicRoutes.map(
             ({ path, name, component: Component }: ROUTE_PROPS) => (
@@ -23,7 +25,7 @@ function App() {
                   <>
                     <Navbar />
                     <Component />
-                    <Footer />{" "}
+                    <Footer />
                   </>
                 }
               />
