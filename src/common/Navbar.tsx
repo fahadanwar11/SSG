@@ -22,18 +22,18 @@ const ServicesSubmenu = [
     title: "Security Guard Services",
     link: "/services/security-guard-services",
   },
-  {
-    title: "Mobile Patrols",
-    link: "/services/mobile-patrols",
-  },
+  // {
+  //   title: "Mobile Patrols",
+  //   link: "/services/mobile-patrols",
+  // },
   {
     title: "Event Security",
     link: "/services/event-security",
   },
-  {
-    title: "Retail & Loss Prevention Security",
-    link: "/services/retail-loss-prevention",
-  },
+  // {
+  //   title: "Retail & Loss Prevention Security",
+  //   link: "/services/retail-loss-prevention",
+  // },
   {
     title: "Customer Service",
     link: "/services/customer-service",

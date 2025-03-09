@@ -5,6 +5,7 @@ const AboutUs = lazy(() => import("./AboutUs"));
 const Services = lazy(() => import("./Services"));
 const ContactUs = lazy(() => import("./ContactUs"));
 const Sectors = lazy(() => import("./Sectors"));
+const RequestADemo = lazy(() => import("./RequestDemo"));
 
 const WebPages = {
   Homepage,
@@ -12,5 +13,6 @@ const WebPages = {
   Services,
   ContactUs,
   Sectors,
+  RequestADemo,
 };
 export default WebPages;

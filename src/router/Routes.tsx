@@ -26,6 +26,11 @@ const publicRoutes = [
     component: WebPages.Sectors,
     name: "Sectors",
   },
+  {
+    path: "/request-a-demo",
+    component: WebPages.RequestADemo,
+    name: "RequestADemo",
+  },
 ];
 
 export default publicRoutes;

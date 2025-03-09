@@ -135,11 +135,11 @@ export default function Footer() {
           </div>
           <div className="flex gap-2 items-center">
             <PhoneCallIcon size={16} />
-            <p>0480 247 436</p>
+            <a href="tel:0480247436">0480 247 436</a>
           </div>
           <div className="flex gap-2 items-center">
             <MailIcon size={16} />
-            <p>admin@securityservicegroup.com.au</p>
+            <a href="admin@securityservicegroup.com.au">admin@securityservicegroup.com.au</a>
           </div>
         </motion.div>
 

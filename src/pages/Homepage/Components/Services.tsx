@@ -26,14 +26,14 @@ const services: Service[] = [
       "Construction Site Protection",
     ],
   },
-  {
-    id: "02",
-    number: "02",
-    title: "Mobile Patrols",
-    link: "/services/mobile-patrols",
-    description:
-      "Ensure continuous surveillance and deterrence with our mobile patrol services.",
-  },
+  // {
+  //   id: "02",
+  //   number: "02",
+  //   title: "Mobile Patrols",
+  //   link: "/services/mobile-patrols",
+  //   description:
+  //     "Ensure continuous surveillance and deterrence with our mobile patrol services.",
+  // },
   {
     id: "03",
     number: "03",
@@ -42,15 +42,15 @@ const services: Service[] = [
     description:
       "We provide specialized security teams for private and corporate events.",
   },
-  {
-    id: "04",
-    number: "04",
-    title: "Retail & Loss Prevention Security",
-    link: "/services/retail-loss-prevention",
+  // {
+  //   id: "04",
+  //   number: "04",
+  //   title: "Retail & Loss Prevention Security",
+  //   link: "/services/retail-loss-prevention",
 
-    description:
-      "Protect your business from theft, vandalism, and fraud with our expert loss prevention officers.",
-  },
+  //   description:
+  //     "Protect your business from theft, vandalism, and fraud with our expert loss prevention officers.",
+  // },
   {
     id: "05",
     number: "05",

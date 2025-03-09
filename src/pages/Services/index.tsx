@@ -29,24 +29,24 @@ const servicesDetails: ServiceDetail[] = [
     contactUs:
       "To learn more about how Security Service Group can enhance the security of your property in Melbourne, please contact us today. Trust us to provide the protection you need, where professionalism and peace of mind come first.",
   },
-  {
-    title: "Mobile Patrols",
-    link: "/services/mobile-patrols",
-    introduction:
-      "Security Service Group offers dynamic mobile patrol services across Melbourne, providing an efficient and effective way to monitor large properties. Our mobile patrols are ideal for deterring crime and ensuring rapid response times.",
-    offerings: [
-      "Routine and Random Patrols: We conduct both scheduled and surprise patrols to maintain a secure environment.",
-      "Custom Patrol Routes: Tailored routes that focus on high-risk areas to maximize security coverage.",
-      "Visible Security Presence: Our marked patrol cars serve as a strong deterrent to potential intruders.",
-    ],
-    whyChoose: [
-      "Advanced Technology: We utilize the latest in GPS and real-time communication technology.",
-      "Professional Patrol Officers: Our officers are trained to spot unusual activities and respond swiftly.",
-      "24/7 Coverage: Security solutions that don't rest, ensuring your property is protected at all times.",
-    ],
-    contactUs:
-      "Discover the benefits of our mobile patrols in Melbourne by contacting Security Service Group today.",
-  },
+  // {
+  //   title: "Mobile Patrols",
+  //   link: "/services/mobile-patrols",
+  //   introduction:
+  //     "Security Service Group offers dynamic mobile patrol services across Melbourne, providing an efficient and effective way to monitor large properties. Our mobile patrols are ideal for deterring crime and ensuring rapid response times.",
+  //   offerings: [
+  //     "Routine and Random Patrols: We conduct both scheduled and surprise patrols to maintain a secure environment.",
+  //     "Custom Patrol Routes: Tailored routes that focus on high-risk areas to maximize security coverage.",
+  //     "Visible Security Presence: Our marked patrol cars serve as a strong deterrent to potential intruders.",
+  //   ],
+  //   whyChoose: [
+  //     "Advanced Technology: We utilize the latest in GPS and real-time communication technology.",
+  //     "Professional Patrol Officers: Our officers are trained to spot unusual activities and respond swiftly.",
+  //     "24/7 Coverage: Security solutions that don't rest, ensuring your property is protected at all times.",
+  //   ],
+  //   contactUs:
+  //     "Discover the benefits of our mobile patrols in Melbourne by contacting Security Service Group today.",
+  // },
   {
     title: "Event Security",
     link: "/services/event-security",
@@ -65,24 +65,24 @@ const servicesDetails: ServiceDetail[] = [
     contactUs:
       "Plan your next Melbourne event with confidence by enlisting Security Service Group's expert security services.",
   },
-  {
-    title: "Retail & Loss Prevention Security",
-    link: "/services/retail-loss-prevention",
-    introduction:
-      "Minimize theft and safeguard your assets with Security Service Group's retail loss prevention services in Melbourne. Our approach combines on-site security personnel with state-of-the-art surveillance technology.",
-    offerings: [
-      "On-Site Personnel: Guards trained to deter theft and ensure in-store security.",
-      "Advanced Surveillance: Utilizing the latest in CCTV technology to oversee and protect your retail space.",
-      "Inventory Management: Strategies to prevent inventory shrinkage and enhance profitability.",
-    ],
-    whyChoose: [
-      "Focused Expertise: Our team specializes in the unique challenges faced by retailers.",
-      "Proactive Measures: We emphasize prevention to minimize potential losses.",
-      "Tailored Solutions: Customized plans to fit the specific needs of your retail environment.",
-    ],
-    contactUs:
-      "Secure your retail business in Melbourne by partnering with Security Service Group.",
-  },
+  // {
+  //   title: "Retail & Loss Prevention Security",
+  //   link: "/services/retail-loss-prevention",
+  //   introduction:
+  //     "Minimize theft and safeguard your assets with Security Service Group's retail loss prevention services in Melbourne. Our approach combines on-site security personnel with state-of-the-art surveillance technology.",
+  //   offerings: [
+  //     "On-Site Personnel: Guards trained to deter theft and ensure in-store security.",
+  //     "Advanced Surveillance: Utilizing the latest in CCTV technology to oversee and protect your retail space.",
+  //     "Inventory Management: Strategies to prevent inventory shrinkage and enhance profitability.",
+  //   ],
+  //   whyChoose: [
+  //     "Focused Expertise: Our team specializes in the unique challenges faced by retailers.",
+  //     "Proactive Measures: We emphasize prevention to minimize potential losses.",
+  //     "Tailored Solutions: Customized plans to fit the specific needs of your retail environment.",
+  //   ],
+  //   contactUs:
+  //     "Secure your retail business in Melbourne by partnering with Security Service Group.",
+  // },
   {
     title: "Customer Service",
     link: "/services/customer-service",

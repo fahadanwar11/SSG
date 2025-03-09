@@ -1,9 +1,10 @@
 // import IMAGES from "@/assets/images";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function HeroSection() {
+  const navigate = useNavigate();
   return (
     <section className="relative min-h-screen">
       {/* Background Image */}
@@ -72,8 +73,9 @@ function HeroSection() {
             <Button
               size="lg"
               className="text-lg font-medium px-8 py-7 cursor-pointer mb-2"
+              onClick={() => navigate("/request-a-demo")}
             >
-              Learn More
+              Request a Demo
             </Button>
             <Link to="/contact">
               <Button
