@@ -31,6 +31,8 @@ const navLinks = [
   { href: "/about-us", label: "About" },
   { href: "/services/security-guard-services", label: "Services" },
   { href: "/sectors/corporate-office-security", label: "Sectors" },
+  { href: "/careers", label: "Careers" }, 
+  { href: "/request-a-quote", label: "Request a Quote" },
 ];
 
 export default function Footer() {
@@ -91,7 +93,11 @@ export default function Footer() {
                     </span>
                   )}
                 </div>
-                <Button type="submit" className="bg-primary" disabled={isSubmitting}>
+                <Button
+                  type="submit"
+                  className="bg-primary"
+                  disabled={isSubmitting}
+                >
                   {isSubmitting ? (
                     "Subscribing..."
                   ) : (
@@ -139,7 +145,9 @@ export default function Footer() {
           </div>
           <div className="flex gap-2 items-center">
             <MailIcon size={16} />
-            <a href="admin@securityservicegroup.com.au">admin@securityservicegroup.com.au</a>
+            <a href="admin@securityservicegroup.com.au">
+              admin@securityservicegroup.com.au
+            </a>
           </div>
         </motion.div>
 

@@ -22,6 +22,11 @@ const ServicesSubmenu = [
     title: "Security Guard Services",
     link: "/services/security-guard-services",
   },
+  {
+    title: "Asset Protection",
+    link: "/services/asset-protection",
+  },
+
   // {
   //   title: "Mobile Patrols",
   //   link: "/services/mobile-patrols",
@@ -29,6 +34,10 @@ const ServicesSubmenu = [
   {
     title: "Event Security",
     link: "/services/event-security",
+  },
+  {
+    title: "Concierge Security Services",
+    link: "/services/concierge-security-services",
   },
   // {
   //   title: "Retail & Loss Prevention Security",
@@ -151,6 +160,13 @@ export default function Navbar() {
                 </HoverCardContent>
               </HoverCard>
             </div>
+
+            <NavLink
+              to="/careers"
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              CAREERS
+            </NavLink>
           </div>
 
           {/* Mobile Menu Button and Contact Button */}
@@ -242,6 +258,13 @@ export default function Navbar() {
                         ))}
                       </CollapsibleContent>
                     </Collapsible>
+
+                    <NavLink
+                      to="/careers"
+                      className="text-white hover:text-gray-300 transition-colors"
+                    >
+                      CAREERS
+                    </NavLink>
 
                     <div className="pt-4">
                       <Button

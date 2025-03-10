@@ -73,9 +73,9 @@ function HeroSection() {
             <Button
               size="lg"
               className="text-lg font-medium px-8 py-7 cursor-pointer mb-2"
-              onClick={() => navigate("/request-a-demo")}
+              onClick={() => navigate("/request-a-quote")}
             >
-              Request a Demo
+              Request a Quote
             </Button>
             <Link to="/contact">
               <Button

@@ -64,7 +64,6 @@ export default function RequestADemo() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log("Form submitted:", formData);
     alert("Thank you for your request! We'll get back to you shortly.");
   };
@@ -262,7 +261,7 @@ export default function RequestADemo() {
                         htmlFor="company"
                         className="block text-sm font-medium text-gray-700 mb-1"
                       >
-                        Company/Organization (if applicable)
+                        Company (if applicable)
                       </label>
                       <input
                         type="text"

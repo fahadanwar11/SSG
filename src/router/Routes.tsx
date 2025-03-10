@@ -27,9 +27,14 @@ const publicRoutes = [
     name: "Sectors",
   },
   {
-    path: "/request-a-demo",
+    path: "/request-a-quote",
     component: WebPages.RequestADemo,
-    name: "RequestADemo",
+    name: "RequestAQuote",
+  },
+  {
+    path: "/careers",
+    component: WebPages.Careers,
+    name: "Careers",
   },
 ];
 

@@ -35,12 +35,29 @@ const services: Service[] = [
   //     "Ensure continuous surveillance and deterrence with our mobile patrol services.",
   // },
   {
+    id: "02",
+    number: "02",
+    title: "Asset Protection",
+    link: "/services/asset-protection",
+    description:
+      "Our asset protection services safeguard your valuable assets and property from theft and vandalism.",
+  },
+
+  {
     id: "03",
     number: "03",
     title: "Event Security",
     link: "/services/event-security",
     description:
       "We provide specialized security teams for private and corporate events.",
+  },
+  {
+    id: "04",
+    number: "04",
+    title: "Concierge Security Services",
+    link: "/services/concierge-security-services",
+    description:
+      "Our concierge security services provide a welcoming and secure environment for your business.",
   },
   // {
   //   id: "04",

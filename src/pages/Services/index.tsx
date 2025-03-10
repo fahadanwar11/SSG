@@ -29,6 +29,28 @@ const servicesDetails: ServiceDetail[] = [
     contactUs:
       "To learn more about how Security Service Group can enhance the security of your property in Melbourne, please contact us today. Trust us to provide the protection you need, where professionalism and peace of mind come first.",
   },
+  {
+    title: "Asset Protection",
+    link: "/services/asset-protection",
+    introduction:
+      "At Security Service Group, we understand that protecting valuable assets is a top priority for businesses and property owners. Our asset protection services are designed to prevent theft, vandalism, and unauthorized access, ensuring the safety of your physical and intellectual property.",
+    offerings: [
+      "Physical Security for High-Value Assets: We provide trained security guards to monitor and safeguard valuable assets, including commercial & retail stock, construction equipment & machinery, industrial goods & warehouses, office & corporate assets, and residential & private property.",
+      "Access Control & Perimeter Security: We implement strict access control measures to prevent unauthorized entry. Our security personnel ensure that only authorized personnel can access restricted areas, reducing the risk of theft or damage.",
+      "Mobile Patrols & Surveillance: Regular security patrols help deter criminal activity and ensure ongoing asset protection. Our guards conduct scheduled and random patrols to monitor premises and identify any potential security risks.",
+      "Theft & Vandalism Prevention: We take a proactive approach to prevent theft and vandalism through visible security presence, surveillance, and risk assessment. Our trained guards are skilled in handling suspicious activities and ensuring immediate action is taken.",
+      "Incident Response & Reporting: In case of security breaches or emergencies, our team responds swiftly and professionally. We document and report incidents in detail, providing our clients with actionable insights and recommendations for improved security.",
+    ],
+    whyChoose: [
+      "Experienced & Licensed Security Guards: Our team consists of highly trained and licensed professionals, ensuring the highest level of security for your assets.",
+      "Customized Security Plans to Suit Your Needs: We design tailored security solutions based on your specific requirements and risk assessments.",
+      "24/7 Protection & Emergency Response: Our services include round-the-clock monitoring and immediate response to any security threats.",
+      "Strong Focus on Prevention & Risk Management: We prioritize preventive measures to minimize risks before they become threats.",
+      "Reliable, Professional, and Discreet Service: Our security personnel uphold the highest standards of professionalism and confidentiality.",
+    ],
+    contactUs:
+      "Protect your valuable assets with Security Service Group – your trusted security partner in Melbourne. Contact us today to discuss your security needs.",
+  },
   // {
   //   title: "Mobile Patrols",
   //   link: "/services/mobile-patrols",
@@ -64,6 +86,28 @@ const servicesDetails: ServiceDetail[] = [
     ],
     contactUs:
       "Plan your next Melbourne event with confidence by enlisting Security Service Group's expert security services.",
+  },
+  {
+    title: "Concierge Security Services",
+    link: "/services/concierge-security-services",
+    introduction:
+      "At Security Service Group, we provide professional concierge security services that combine security expertise with excellent customer service. Our concierge security guards serve as the first point of contact, ensuring a safe and welcoming environment while maintaining strict security protocols.",
+    offerings: [
+      "Front Desk & Reception Security: Our concierge security personnel manage reception areas, ensuring only authorized individuals gain access while providing a warm and professional first impression.",
+      "Access Control & Visitor Management: We monitor and regulate entry to buildings, logging visitor details, verifying identifications, and ensuring compliance with security procedures.",
+      "Surveillance & Incident Reporting: Our concierge security officers remain vigilant at all times, monitoring CCTV systems, patrolling premises, and promptly reporting any security concerns or incidents.",
+      "Customer Service & Assistance: In addition to security duties, our guards assist residents, employees, and guests with inquiries, directions, and general customer service needs.",
+      "Emergency Response & Conflict Resolution: Our trained security personnel are prepared to respond to emergencies, such as medical incidents, fire alarms, or unauthorized access attempts, ensuring quick and professional resolution.",
+    ],
+    whyChoose: [
+      "Professional & Well-Presented Security Officers: Our security personnel are trained to uphold a professional and approachable demeanor at all times.",
+      "Trained in Both Security & Customer Service: Our concierge security officers are skilled in both security protocols and exceptional customer service.",
+      "Effective Access Control & Risk Management: We ensure strict access control measures and proactive risk management to maintain a secure environment.",
+      "24/7 Security Coverage & Support: Our services include round-the-clock monitoring and immediate response to any security concerns.",
+      "Tailored Security Plans to Suit Your Needs: We provide customized security solutions based on your property’s specific requirements and risk assessments.",
+    ],
+    contactUs:
+      "At Security Service Group, we ensure that security and hospitality go hand in hand, providing a safe, professional, and welcoming environment for your property or business. Contact us today to discuss your concierge security needs.",
   },
   // {
   //   title: "Retail & Loss Prevention Security",
