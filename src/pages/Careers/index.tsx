@@ -65,7 +65,7 @@ export default function Careers() {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <div className="p-8 md:p-10">
+            <div className="md:p-10 p-4">
               <div className="space-y-6 mb-10">
                 <h2 className="text-3xl font-bold text-primary mb-6">
                   Why Work With Us?
@@ -166,7 +166,7 @@ export default function Careers() {
               </div>
 
               <motion.div
-                className="bg-blue-50 p-6 rounded-lg border border-blue-100"
+                className="bg-blue-50 lg:p-6 md:p-4 p-2 rounded-lg border border-blue-100"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
@@ -177,28 +177,30 @@ export default function Careers() {
                       Ready to Apply?
                     </h3>
                     <div className="flex items-center">
-                      <svg
-                        className="h-5 w-5 text-blue-700 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                      <span className="text-blue-700 font-medium">
-                        Send your resume to:{" "}
-                        <a
-                          href="mailto:careers@securityservicegroup.com.au"
-                          className="underline"
-                        >
-                          careers@securityservicegroup.com.au
-                        </a>
+                      <span className="text-primary font-medium">
+                        Send your resume to:
+                        <div className="flex items-center mt-2">
+                          <svg
+                            className="h-5 w-5 text-blue-700 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                            />
+                          </svg>
+                          <a
+                            href="mailto:careers@securityservicegroup.com.au"
+                            className="underline text-wrap overflow-clip text-xs md:text-md lg:text-lg"
+                          >
+                            careers@securityservicegroup.com.au
+                          </a>
+                        </div>
                       </span>
                     </div>
                   </div>

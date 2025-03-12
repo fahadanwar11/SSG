@@ -25,9 +25,9 @@ export default function AboutUsSlides() {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           >
             <p className="text-gray-700">
-              At On Guard Group, security meets crowd control excellence. We
-              specialize in licensed venues and events, prioritizing
-              professionalism, training, and exceptional service.
+              At SSG, security meets crowd control excellence. We specialize in
+              licensed venues and events, prioritizing professionalism,
+              training, and exceptional service.
             </p>
           </motion.div>
         </div>
@@ -43,10 +43,10 @@ export default function AboutUsSlides() {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <p className="text-white">
-              At On Guard Group, we excel in managing dynamic crowd
-              environments. Our dedicated team of security professionals ensures
-              safety for patrons, staff, and assets through tailored crowd
-              control strategies.
+              At SSG, we excel in managing dynamic crowd environments. Our
+              dedicated team of security professionals ensures safety for
+              patrons, staff, and assets through tailored crowd control
+              strategies.
             </p>
           </motion.div>
         </div>
@@ -66,9 +66,8 @@ export default function AboutUsSlides() {
             </h2>
             <p className="text-gray-700 mt-4">
               Our commitment to professionalism shines in every service aspect.
-              Expect a skilled, dedicated team from On Guard Group, upholding
-              integrity, reliability, and accountability for seamless security
-              management.
+              Expect a skilled, dedicated team from SSG, upholding integrity,
+              reliability, and accountability for seamless security management.
             </p>
           </motion.div>
 
@@ -118,7 +117,7 @@ export default function AboutUsSlides() {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Choose On Guard Group
+              Choose SSG
             </h2>
             <p className="text-gray-700 mt-4">
               For a security solution that goes beyond the ordinary – where

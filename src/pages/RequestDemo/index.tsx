@@ -109,7 +109,7 @@ export default function RequestADemo() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="bg-white rounded-xl shadow-lg p-8"
+              className="rounded-xl shadow-lg md:p-8 p-2 md:w-full text-wrap"
             >
               <motion.h2
                 variants={itemVariants}
@@ -142,7 +142,7 @@ export default function RequestADemo() {
                     <h3 className="text-xl font-semibold mb-2">
                       Call Us Directly
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-wrap">
                       Prefer to speak with someone? Call us directly to discuss
                       your security needs and get an instant quote.
                     </p>
@@ -185,10 +185,9 @@ export default function RequestADemo() {
                         </svg>
                         Email:
                         <a
-                          className="ml-2"
+                          className="ml-1 text-sm"
                           href="mailto:info@securityservicegroup.com.au"
                         >
-                          {" "}
                           info@securityservicegroup.com.au
                         </a>
                       </p>
@@ -444,6 +443,7 @@ export default function RequestADemo() {
                 </form>
               </motion.div>
             </div>
+
           </div>
         </div>
       </div>
