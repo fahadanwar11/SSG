@@ -163,7 +163,7 @@ export default function RequestADemo() {
                           />
                         </svg>
                         Phone:
-                        <a href="tel:0480247436" className="ml-2">
+                        <a href="tel:0480247436" className="ml-1 text-sm underline">
                           0480 247 436
                         </a>
                       </p>
@@ -185,7 +185,7 @@ export default function RequestADemo() {
                         </svg>
                         Email:
                         <a
-                          className="ml-1 text-sm"
+                          className="ml-1 text-sm underline"
                           href="mailto:info@securityservicegroup.com.au"
                         >
                           info@securityservicegroup.com.au
