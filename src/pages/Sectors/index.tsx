@@ -35,7 +35,7 @@ const sectorsDetails: SectorsDetail[] = [
   {
     title: "Retail & Shopping Centres",
     link: "/sectors/retail-shopping-centres",
-    imgUrl: "/sectorsImg.JPEG",
+    imgUrl: "/sectorImages/eventsAndPrivateSector.JPEG",
     tagline: "Protecting retail spaces and shopping centres.",
     introduction:
       "Security Service Group offers specialized security services for retail shopping centres in Melbourne, ensuring a safe shopping environment for customers and a secure setting for retailers.",
@@ -100,7 +100,7 @@ const sectorsDetails: SectorsDetail[] = [
     introduction:
       "Protect your construction site in Melbourne with specialized security services from Security Service Group, designed to prevent theft and vandalism.",
     services: [
-      "Site Surveillance: Installation of cameras and monitoring equipment to oversee all activities on the site.",
+      "Site Surveillance: Monitoring equipment to oversee all activities on the site.",
       "Access Control: Ensuring that only authorized personnel can enter the site.",
       "Patrol Services: Regular patrols to deter criminal activity and ensure compliance with safety protocols.",
     ],

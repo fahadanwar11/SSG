@@ -87,7 +87,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <NavLink
-            to="/"
+            to=""
+            onClick={() => (window.location.href = "/")}
+
             // className="text-white text-2xl font-bold tracking-wider"
           >
             <img
@@ -98,9 +100,10 @@ export default function Navbar() {
           </NavLink>
 
           {/* Navigation Links - Desktop */}
-          <div className="hidden md:flex space-x-12 font-semibold">
+          <div className="hidden md:flex lg:space-x-10 md:space-x-6 font-semibold text-sm lg:text-lg">
             <NavLink
-              to="/about-us"
+              to=""
+              onClick={() => (window.location.href = "/about-us")}
               className="text-white hover:text-gray-300 transition-colors"
             >
               ABOUT US
@@ -162,7 +165,8 @@ export default function Navbar() {
             </div>
 
             <NavLink
-              to="/careers"
+              to=""
+              onClick={() => (window.location.href = "/careers")}
               className="text-white hover:text-gray-300 transition-colors"
             >
               CAREERS
@@ -170,15 +174,35 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button and Contact Button */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
             {/* Contact Button - Desktop */}
             <div className="hidden md:block">
               <Button
-                className="bg-secondary text-black hover:bg-secondary "
+                className="bg-secondary text-black hover:bg-secondary px-2.5 lg:px-4 text-base"
                 size="lg"
                 asChild
               >
-                <NavLink to="/contact">CONTACT US</NavLink>
+                <NavLink
+                  to=""
+                  onClick={() => (window.location.href = "/request-a-quote")}
+                >
+                   REQUEST A QUOTE
+                </NavLink>
+              </Button>
+            </div>
+
+            <div className="hidden md:block">
+              <Button
+                className="bg-secondary text-black hover:bg-secondary px-2.5 lg:px-4 text-base"
+                size="lg"
+                asChild
+              >
+                <NavLink
+                  to=""
+                  onClick={() => (window.location.href = "/contact")}
+                >
+                  CONTACT US
+                </NavLink>
               </Button>
             </div>
 
@@ -193,11 +217,12 @@ export default function Navbar() {
                 </SheetTrigger>
                 <SheetContent
                   side="right"
-                  className="bg-primary/95 text-white border-l border-gray-800 w-[300px] px-4"
+                  className="bg-primary/95 text-white border-l border-gray-800 overflow-y-scroll w-[300px] px-4"
                 >
                   <div className="flex flex-col space-y-6 mt-8">
                     <NavLink
-                      to="/about-us"
+                      to=""
+                      onClick={() => (window.location.href = "/about-us")}
                       className="text-white hover:text-gray-300 transition-colors text-lg font-medium"
                     >
                       ABOUT US
@@ -260,20 +285,45 @@ export default function Navbar() {
                     </Collapsible>
 
                     <NavLink
-                      to="/careers"
-                      className="text-white hover:text-gray-300 transition-colors"
+                      to=""
+                      onClick={() => (window.location.href = "/careers")}
+                      className="text-white hover:text-gray-300 transition-colors text-lg font-medium"
                     >
                       CAREERS
                     </NavLink>
 
-                    <div className="pt-4">
+                    <div className="pt-2.5">
                       <Button
                         variant="secondary"
-                        size="lg"
+                        size="sm"
                         className="w-full"
                         asChild
                       >
-                        <NavLink to="/contact">CONTACT US</NavLink>
+                        <NavLink
+                          to=""
+                          onClick={() =>
+                            (window.location.href = "/request-a-quote")
+                          }
+                        >
+                          REQUEST A QUOTE
+                        </NavLink>
+                      </Button>
+                    </div>
+
+                    <div className="pt-2.5 mb-4">
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        className="w-full"
+                        asChild
+                      >
+                        <NavLink
+                          to=""
+                          onClick={() => (window.location.href = "/contact")}
+                          className="text-sm"
+                        >
+                          CONTACT US
+                        </NavLink>
                       </Button>
                     </div>
                   </div>
@@ -281,12 +331,6 @@ export default function Navbar() {
               </Sheet>
             </div>
 
-            {/* Contact Button - Mobile (outside drawer for visibility) */}
-            {/* <div className="md:hidden">
-              <Button variant="secondary" size="sm" asChild>
-                <NavLink to="/contact">CONTACT</NavLink>
-              </Button>
-            </div> */}
           </div>
         </div>
       </div>

@@ -103,54 +103,61 @@ export default function RequestADemo() {
       {/* Main Content */}
       <div className="flex-grow bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-12">
             {/* Left Column - How to Request */}
             <motion.div
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="rounded-xl shadow-lg md:p-8 p-2 md:w-full text-wrap"
+              className="rounded-xl shadow-lg md:p-8 p-4 w-full text-wrap"
             >
               <motion.h2
                 variants={itemVariants}
-                className="text-3xl font-bold text-primary mb-8"
+                className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center"
               >
                 How to Request a Quote
               </motion.h2>
 
-              <div className="space-y-8">
-                <motion.div variants={itemVariants} className="flex">
-                  <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-primary font-bold text-xl mr-4">
+              <div className="space-y-6">
+                <motion.div
+                  variants={itemVariants}
+                  className="flex flex-wrap items-start"
+                >
+                  <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-100 text-primary font-bold text-lg md:text-xl mr-4 mb-2">
                     1
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">
+                  <div className="w-full md:w-auto">
+                    <h3 className="text-lg md:text-xl font-semibold mb-1">
                       Fill Out the Form
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base break-words">
                       Provide the details about your security requirements, and
                       our team will get back to you with a personalized quote.
                     </p>
                   </div>
                 </motion.div>
 
-                <motion.div variants={itemVariants} className="flex">
-                  <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-primary font-bold text-xl mr-4">
+                <motion.div
+                  variants={itemVariants}
+                  className="flex flex-wrap items-start"
+                >
+                  <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-100 text-primary font-bold text-lg md:text-xl mr-4 mb-2">
                     2
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">
+                  <div className="w-full md:w-auto">
+                    <h3 className="text-lg md:text-xl font-semibold mb-1">
                       Call Us Directly
                     </h3>
-                    <p className="text-gray-600 text-wrap">
+                    <p className="text-gray-600 text-sm md:text-base break-words">
                       Prefer to speak with someone? Call us directly to discuss
                       your security needs and get an instant quote.
                     </p>
+
                     <div className="mt-3 space-y-1">
-                      <p className="flex items-center text-primary">
+                      <p className="flex items-center text-primary text-sm md:text-base">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 mr-2"
+                          className="h-4 w-4 mr-2"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -163,12 +170,15 @@ export default function RequestADemo() {
                           />
                         </svg>
                         Phone:
-                        <a href="tel:0480247436" className="ml-1 text-sm underline">
+                        <a
+                          href="tel:0480247436"
+                          className="ml-1 text-sm underline"
+                        >
                           0480 247 436
                         </a>
                       </p>
 
-                      <p className="flex items-center text-primary">
+                      <p className="flex items-center text-primary text-sm md:text-base">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5 mr-2"
@@ -195,15 +205,18 @@ export default function RequestADemo() {
                   </div>
                 </motion.div>
 
-                <motion.div variants={itemVariants} className="flex">
-                  <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-primary font-bold text-xl mr-4">
+                <motion.div
+                  variants={itemVariants}
+                  className="flex flex-wrap items-start"
+                >
+                  <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-100 text-primary font-bold text-lg md:text-xl mr-4 mb-2">
                     3
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">
+                  <div className="w-full md:w-auto">
+                    <h3 className="text-lg md:text-xl font-semibold mb-1">
                       We'll Customize a Solution for You
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base break-words">
                       Once we receive your request, we'll assess your needs and
                       provide a competitive, tailored quote that fits your
                       security requirements.
@@ -443,13 +456,12 @@ export default function RequestADemo() {
                 </form>
               </motion.div>
             </div>
-
           </div>
         </div>
       </div>
 
       {/* Footer with License Info */}
-      <motion.div
+      {/* <motion.div
         className="bg-gray-800 text-white py-6 text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -459,7 +471,7 @@ export default function RequestADemo() {
           <p className="text-gray-300 text-sm">LICENCE NUMBER Z46-120-60S</p>
           <p className="text-gray-300 text-sm">ABN 36 675 127 670</p>
         </div>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

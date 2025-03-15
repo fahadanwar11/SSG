@@ -1,10 +1,10 @@
-import IMAGES from "@/assets/images";
 import { useParams } from "react-router-dom";
 
 interface ServiceDetail {
   title: string;
   link: string;
   introduction: string;
+  imgUrl?: string;
   offerings: string[];
   whyChoose: string[];
   contactUs: string;
@@ -14,6 +14,7 @@ const servicesDetails: ServiceDetail[] = [
   {
     title: "Security Guard Services",
     link: "/services/security-guard-services",
+    imgUrl: "/bannerImg.JPEG",
     introduction:
       "At Security Service Group, we pride ourselves on providing premier security guard services in Melbourne, ensuring the utmost safety and security of your premises. Our trained guards are equipped to handle a variety of security situations with professionalism and effectiveness, making us the trusted choice for protecting businesses, residential complexes, and individual clients.",
     offerings: [
@@ -32,6 +33,7 @@ const servicesDetails: ServiceDetail[] = [
   {
     title: "Asset Protection",
     link: "/services/asset-protection",
+    imgUrl: "/servicesTwo.JPEG",
     introduction:
       "At Security Service Group, we understand that protecting valuable assets is a top priority for businesses and property owners. Our asset protection services are designed to prevent theft, vandalism, and unauthorized access, ensuring the safety of your physical and intellectual property.",
     offerings: [
@@ -51,27 +53,11 @@ const servicesDetails: ServiceDetail[] = [
     contactUs:
       "Protect your valuable assets with Security Service Group – your trusted security partner in Melbourne. Contact us today to discuss your security needs.",
   },
-  // {
-  //   title: "Mobile Patrols",
-  //   link: "/services/mobile-patrols",
-  //   introduction:
-  //     "Security Service Group offers dynamic mobile patrol services across Melbourne, providing an efficient and effective way to monitor large properties. Our mobile patrols are ideal for deterring crime and ensuring rapid response times.",
-  //   offerings: [
-  //     "Routine and Random Patrols: We conduct both scheduled and surprise patrols to maintain a secure environment.",
-  //     "Custom Patrol Routes: Tailored routes that focus on high-risk areas to maximize security coverage.",
-  //     "Visible Security Presence: Our marked patrol cars serve as a strong deterrent to potential intruders.",
-  //   ],
-  //   whyChoose: [
-  //     "Advanced Technology: We utilize the latest in GPS and real-time communication technology.",
-  //     "Professional Patrol Officers: Our officers are trained to spot unusual activities and respond swiftly.",
-  //     "24/7 Coverage: Security solutions that don't rest, ensuring your property is protected at all times.",
-  //   ],
-  //   contactUs:
-  //     "Discover the benefits of our mobile patrols in Melbourne by contacting Security Service Group today.",
-  // },
   {
     title: "Event Security",
     link: "/services/event-security",
+    imgUrl: "/servicesThree.JPEG",
+
     introduction:
       "Ensure the safety of your events with Security Service Group's specialized event security services. We cater to all types of events in Melbourne, from corporate gatherings to large public celebrations.",
     offerings: [
@@ -90,6 +76,7 @@ const servicesDetails: ServiceDetail[] = [
   {
     title: "Concierge Security Services",
     link: "/services/concierge-security-services",
+    imgUrl: "/bannerImg.JPEG",
     introduction:
       "At Security Service Group, we provide professional concierge security services that combine security expertise with excellent customer service. Our concierge security guards serve as the first point of contact, ensuring a safe and welcoming environment while maintaining strict security protocols.",
     offerings: [
@@ -109,27 +96,11 @@ const servicesDetails: ServiceDetail[] = [
     contactUs:
       "At Security Service Group, we ensure that security and hospitality go hand in hand, providing a safe, professional, and welcoming environment for your property or business. Contact us today to discuss your concierge security needs.",
   },
-  // {
-  //   title: "Retail & Loss Prevention Security",
-  //   link: "/services/retail-loss-prevention",
-  //   introduction:
-  //     "Minimize theft and safeguard your assets with Security Service Group's retail loss prevention services in Melbourne. Our approach combines on-site security personnel with state-of-the-art surveillance technology.",
-  //   offerings: [
-  //     "On-Site Personnel: Guards trained to deter theft and ensure in-store security.",
-  //     "Advanced Surveillance: Utilizing the latest in CCTV technology to oversee and protect your retail space.",
-  //     "Inventory Management: Strategies to prevent inventory shrinkage and enhance profitability.",
-  //   ],
-  //   whyChoose: [
-  //     "Focused Expertise: Our team specializes in the unique challenges faced by retailers.",
-  //     "Proactive Measures: We emphasize prevention to minimize potential losses.",
-  //     "Tailored Solutions: Customized plans to fit the specific needs of your retail environment.",
-  //   ],
-  //   contactUs:
-  //     "Secure your retail business in Melbourne by partnering with Security Service Group.",
-  // },
   {
     title: "Customer Service",
     link: "/services/customer-service",
+    imgUrl: "/servicesTwo.JPEG",
+
     introduction:
       "Elevate your customer experience with Security Service Group's customer service security solutions in Melbourne. Our approach combines security and hospitality to create a welcoming and secure environment for your patrons.",
     offerings: [
@@ -148,6 +119,8 @@ const servicesDetails: ServiceDetail[] = [
   {
     title: "Crowd Control",
     link: "/services/crowd-control",
+    imgUrl: "/servicesThree.JPEG",
+
     introduction:
       "Manage large crowds with Security Service Group's expert crowd control services in Melbourne. We provide comprehensive solutions for managing crowds at events, ensuring safety and order.",
     offerings: [
@@ -178,10 +151,10 @@ function Services() {
     <>
       <div className="relative inset-0 h-full">
         <img
-          src={IMAGES.SERVICES_IMG || "/placeholder.svg"}
+          src={selectedService?.imgUrl || "/placeholder.svg"}
           alt="Services"
-          className="w-full h-96 object-cover inset-0 bg-black/50 mix-blend-multiply"
-        />
+          className="w-full max-h-[75vh] object-cover bg-black/50 mix-blend-multiply" 
+          />
         <div className="absolute inset-0 bg-black/50 mix-blend-multiply" />
         <div className="absolute inset-0 max-w-7xl lg:w-10/12 w-11/12 mx-auto flex flex-col justify-center">
           <div className="text-white">

@@ -22,7 +22,7 @@ function AboutUsBanner() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
-          className="pt-40 md:pt-48 lg:pt-56 max-w-2xl"
+          className="pt-40 md:pt-48 lg:pt-56 max-w-3xl"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -36,7 +36,7 @@ function AboutUsBanner() {
             }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
           >
-            Leadership in Security & Protection
+            Your Trusted Security Partner in Melbourne
           </motion.h1>
 
           <motion.p
@@ -48,13 +48,15 @@ function AboutUsBanner() {
               duration: 0.6,
               delay: 0.4,
             }}
-            className="text-md md:text-lg text-white/90 max-w-xl"
+            className="text-md md:text-lg text-white/90 max-w-3xl"
           >
-            Founded in 2024 by Ahmer Shahid, Security Service Group is built on
-            a vision of enhancing security standards for businesses, residential
-            properties, and public spaces. With a strategic approach to risk
-            mitigation, we focus on proactive security solutions to create safer
-            environments.
+            Security Service Group is a professional security company dedicated
+            to delivering high-quality security services across Melbourne. Our
+            team of highly trained security guards provides a strong and
+            reliable presence to safeguard businesses, properties, and people.
+            With a commitment to professionalism and excellence, we ensure that
+            our clients receive top-tier security solutions tailored to their
+            specific needs.
           </motion.p>
         </motion.div>
       </div>
