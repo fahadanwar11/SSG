@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
@@ -48,15 +49,28 @@ export default function ContactUsCard() {
   const onSubmit = async (data: FormData) => {
     console.log(data);
     setIsSubmitting(true);
+
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const templateParams = {
+        user_name: data.name,
+        user_email: data.email,
+        message: data.message,
+      };
+
+      await emailjs.send(
+        "service_q9jnoys",
+        "template_09edcwx", 
+        templateParams,
+        "6jYhGtY7joKwzm02c" // Replace with your EmailJS Public Key
+      );
+
       toast.success("Message sent successfully!");
       reset();
     } catch (error) {
-      console.log(error);
+      console.error("EmailJS Error:", error);
       toast.error("Failed to send message. Please try again.");
     }
+
     setIsSubmitting(false);
   };
 

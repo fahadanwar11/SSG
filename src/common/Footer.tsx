@@ -1,5 +1,5 @@
 import type React from "react";
-
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
@@ -55,10 +55,26 @@ export default function Footer() {
   const onSubmit = async (data: FormData) => {
     console.log(data);
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    toast.success("Successfully subscribed to our mailing list!");
-    reset();
+
+    try {
+      const templateParams = {
+        user_email: data.email,
+      };
+
+      await emailjs.send(
+        "service_q9jnoys", 
+        "template_csreqhq", 
+        templateParams,
+        "6jYhGtY7joKwzm02c" // Replace with your EmailJS Public Key
+      );
+
+      toast.success("Successfully subscribed to our mailing list!");
+      reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to subscribe. Please try again.");
+    }
+
     setIsSubmitting(false);
   };
 
@@ -206,20 +222,18 @@ export default function Footer() {
             </motion.button>
           </div>
         </motion.div>
-
-     
       </div>
       <motion.div
-          className="bg-gray-800 text-white py-3 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-gray-300 text-sm">LICENCE NUMBER Z46-120-60S</p>
-            <p className="text-gray-300 text-sm">ABN 36 675 127 670</p>
-          </div>
-        </motion.div>
+        className="bg-gray-800 text-white py-3 text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gray-300 text-sm">LICENCE NUMBER Z46-120-60S</p>
+          <p className="text-gray-300 text-sm">ABN 36 675 127 670</p>
+        </div>
+      </motion.div>
     </footer>
   );
 }

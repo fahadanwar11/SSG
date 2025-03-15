@@ -195,10 +195,10 @@ export default function Careers() {
                             />
                           </svg>
                           <a
-                            href="mailto:careers@securityservicegroup.com.au"
+                            href="mailto:recruitment@securityservicegroup.com.au"
                             className="underline text-wrap overflow-clip text-xs md:text-md lg:text-lg"
                           >
-                            careers@securityservicegroup.com.au
+                            recruitment@securityservicegroup.com.au
                           </a>
                         </div>
                       </span>
