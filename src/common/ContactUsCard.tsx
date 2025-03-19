@@ -56,12 +56,11 @@ export default function ContactUsCard() {
         user_email: data.email,
         message: data.message,
       };
-
       await emailjs.send(
-        "service_q9jnoys",
-        "template_09edcwx", 
+        import.meta.env.VITE_EMAIL_JS_SERVICE_ID || "service_q9jnoys",
+        "template_09edcwx",
         templateParams,
-        "6jYhGtY7joKwzm02c" // Replace with your EmailJS Public Key
+        import.meta.env.VITE_EMAIL_JS_PK || "default_public_key" // Replace with your EmailJS Public Key
       );
 
       toast.success("Message sent successfully!");

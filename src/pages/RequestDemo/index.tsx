@@ -1,6 +1,9 @@
 import type React from "react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
+import { Loader2 } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -61,11 +64,56 @@ export default function RequestADemo() {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const reset = () => {
+    setFormData({
+      name: "",
+      company: "",
+      phone: "",
+      email: "",
+      serviceType: "",
+      otherService: "",
+      location: "",
+      dateTime: "",
+      details: "",
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your request! We'll get back to you shortly.");
+    console.log(formData);
+    setIsSubmitting(true);
+
+    try {
+      const templateParams = {
+        user_name: formData.name,
+        user_email: formData.email,
+        phone: formData.phone,
+        serviceType:
+          formData.serviceType === "Other"
+            ? formData.otherService
+            : formData.serviceType,
+        location: formData.location,
+        dateTime: formData.dateTime,
+        ...(formData.company && { company: formData.company }),
+        ...(formData.details && { details: formData.details }),
+      };
+      await emailjs.send(
+        import.meta.env.VITE_EMAIL_JS_SERVICE_ID || "service_q9jnoys",
+        "template_t3li0e7",
+        templateParams,
+        import.meta.env.VITE_EMAIL_JS_PK || "default_public_key" 
+      );
+
+      toast.success("Message sent successfully!");
+      reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -358,7 +406,10 @@ export default function RequestADemo() {
                       <option value="Concierge Security">
                         Concierge Security
                       </option>
-                      <option value="Mobile Patrols">Mobile Patrols</option>
+                      <option value="Asset Protection">Asset Protection</option>
+                      <option value="Crowd Control">Crowd Control</option>
+                      <option value="Custom Service">Custom Service</option>
+
                       <option value="Other">Other (Please specify)</option>
                     </select>
 
@@ -449,9 +500,16 @@ export default function RequestADemo() {
                     whileHover="hover"
                     whileTap="tap"
                     type="submit"
-                    className="w-full bg-primary text-white py-3 px-6 rounded-md font-medium text-lg transition-all duration-300"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-white py-3 px-6 rounded-md font-medium text-lg transition-all duration-300 disabled:cursor-not-allowed"
                   >
-                    Submit Request
+                    {isSubmitting ? (
+                      <span className="flex justify-center items-center gap-4">
+                        <Loader2 className="animate-spin" /> <p>Submitting</p>
+                      </span>
+                    ) : (
+                      "Submit Request"
+                    )}
                   </motion.button>
                 </form>
               </motion.div>
@@ -459,19 +517,6 @@ export default function RequestADemo() {
           </div>
         </div>
       </div>
-
-      {/* Footer with License Info */}
-      {/* <motion.div
-        className="bg-gray-800 text-white py-6 text-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-300 text-sm">LICENCE NUMBER Z46-120-60S</p>
-          <p className="text-gray-300 text-sm">ABN 36 675 127 670</p>
-        </div>
-      </motion.div> */}
     </div>
   );
 }

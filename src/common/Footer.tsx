@@ -62,10 +62,10 @@ export default function Footer() {
       };
 
       await emailjs.send(
-        "service_q9jnoys", 
-        "template_csreqhq", 
+        import.meta.env.VITE_EMAIL_JS_SERVICE_ID || "service_q9jnoys",
+        "template_csreqhq",
         templateParams,
-        "6jYhGtY7joKwzm02c" // Replace with your EmailJS Public Key
+        import.meta.env.VITE_EMAIL_JS_PK
       );
 
       toast.success("Successfully subscribed to our mailing list!");

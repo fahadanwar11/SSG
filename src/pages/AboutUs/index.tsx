@@ -1,6 +1,6 @@
 import ContactUsCard from "@/common/ContactUsCard";
 import AboutUsBanner from "./Components/AboutUsBanner";
-import AboutUsCard from "./Components/AboutUsCard";
+// import AboutUsCard from "./Components/AboutUsCard";
 import AboutUsSlides from "./Components/AboutUsSlides";
 import FAQSection from "@/common/Faqs";
 import AboutUsValues from "./Components/AboutUsValues";
@@ -10,7 +10,7 @@ function AboutUs() {
     <>
       <AboutUsBanner />
       <AboutUsValues />
-      <AboutUsCard />
+      {/* <AboutUsCard /> */}
       <AboutUsSlides />
       <FAQSection />
       <ContactUsCard />
