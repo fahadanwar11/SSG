@@ -408,7 +408,7 @@ export default function RequestADemo() {
                       </option>
                       <option value="Asset Protection">Asset Protection</option>
                       <option value="Crowd Control">Crowd Control</option>
-                      <option value="Custom Service">Custom Service</option>
+                      <option value="Customer Service">Customer Service</option>
 
                       <option value="Other">Other (Please specify)</option>
                     </select>
